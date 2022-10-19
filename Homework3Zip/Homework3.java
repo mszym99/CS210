@@ -3,45 +3,44 @@ import java.util.Scanner;
 public class Homework3 {
 
 // Create a seperate method of boolean to determine prime num for part three of homework where the program prints 8 prime nums per line
-public static boolean Prime(int n) {
-if (n > 2 && (n & 1) == 0) {
-   return false; }
-   for (int i = 3; i * i <= n; i += 2)
-      if (n % i == 0)
-         return false;
-         return true;
+   public static boolean Prime(int n) {
+      if (n > 2 && (n & 1) == 0) {
+         return false; }
+      for (int i = 3; i * i <= n; i += 2) {
+         if (n % i == 0){
+            return false;
+            return true;
          }
+      }
+   }
 
-public static void main(String[] args) {
-Scanner input = new Scanner(System.in);
+   public static void main(String[] args) {
+   Scanner input = new Scanner(System.in);
 
 
 
 // Homework Part 1
 // Prompt the user to enter a year and the first three letters of a specific month ie Mar Jun Jul
-
-System.out.println("Enter a year between the years 1900-2100: ");
-int year = input.nextInt();
-
-
+   System.out.println("Enter a year between the years 1900-2100: ");
+   int year = input.nextInt();
+      
 // Prompt the user to enter a month now
-
-System.out.println("Now enter your month in 3 letters: ");
-String month = input.next();
+   System.out.println("Now enter your month in 3 letters: ");
+   String month = input.next();
 
 // Test the year for a leap year now
-boolean leapYear = ((year % 100 == 0) && (year % 4 != 0)) || (year % 400 == 0);
+   boolean leapYear = ((year % 100 == 0) && (year % 4 != 0)) || (year % 400 == 0);
 
-if (month.equals("Jan") || month.equals("Mar") || month.equals("May") || month.equals("Jul") || month.equals("Aug") || month.equals("Oct") || month.equals("Dec"))
-{ System.out.println(month + " " + year + " has ");
-System.out.println(31 + " days"); }
+   if (month.equals("Jan") || month.equals("Mar") || month.equals("May") || month.equals("Jul") || month.equals("Aug") || month.equals("Oct") || month.equals("Dec"))
+   { System.out.println(month + " " + year + " has ");
+   System.out.println(31 + " days"); }
 
-else if (month.equals("Apr") || month.equals("Jun") || month.equals("Sep") || month.equals("Nov"))
-{ System.out.println(month + " " + year + " has ");
-System.out.println(30 + " days"); }
+   else if (month.equals("Apr") || month.equals("Jun") || month.equals("Sep") || month.equals("Nov"))
+   { System.out.println(month + " " + year + " has ");
+   System.out.println(30 + " days"); }
 
-else {
-System.out.println(month + " is not a proper month"); }
+   else {
+   System.out.println(month + " is not a proper month"); }
 
 
 // Homework Part 2
