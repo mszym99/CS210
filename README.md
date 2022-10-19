@@ -1,1 +1,2 @@
 # CS210
+This course covers the concepts and practices of information representation, computer algorithms, hardware organization and computer program design and implementation. Students write, run, debug, analyze and evaluate computer programs. Topics include primitive data types, number systems, file I/O classes, control structures, method design and usage, array–sorting and searching algorithms. Programming projects are required.
